@@ -1,0 +1,91 @@
+{
+    "target_vars": {
+        "lungs.q_in[1].p": {
+            "model": "ventilator",
+            "multiplier": 1,
+            "divider": 1
+        },
+        "lungs.q_in[1].m_flow": {
+            "model": "ventilator",
+            "multiplier": 1,
+            "divider": 1
+        },
+        "Ecg.ecg": {
+            "model": "hemodynamics",
+            "multiplier": 1,
+            "divider": 1
+        },
+        "EithaPressure.pressure": {
+            "model": "hemodynamics",
+            "multiplier": 1,
+            "divider": 1
+        },
+        "filter.y": {
+            "model": "ventilator",
+            "multiplier": 60,
+            "divider": 1
+        },
+        "currentHeartReat.y": { 
+            "model": "hemodynamics",
+            "multiplier": 60,
+            "divider": 1
+        },
+        "arterialPressure.systolic": {
+            "model": "hemodynamics",
+            "multiplier": 1,
+            "divider": 133.322
+        },
+        "arterialPressure.diastolic": {
+            "model": "hemodynamics",
+            "multiplier": 1,
+            "divider": 133.322
+        },
+        "arterial.sO2": {
+            "model": "bloody_mary",
+            "multiplier": 100,
+            "divider": 1
+        },
+        "arterial.pO2": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 133.322
+        },
+        "arterial.pCO2": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 133.322
+        },
+        "arterial.pH": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 1
+        },
+        "tissueUnit[1].pH": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 1
+        },
+        "venous.pH": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 1
+        }
+    },
+    "controls": {
+        "TotalCompliance": {
+            "model": "ventilator",
+            "multiplier": 98.0665,
+            "divider": 1e-6
+        },
+        "DV": {
+            "model": "bloody_mary",
+            "multiplier": 1000000,
+            "divider": 1
+        },
+        "cShuntFrac": {
+            "model": "bloody_mary",
+            "multiplier": 100,
+            "divider": 1
+        }
+    }
+}

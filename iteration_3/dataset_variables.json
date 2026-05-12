@@ -1,0 +1,25 @@
+{
+    "plot_vars": [
+        "lungs.q_in[1].p",
+        "lungs.q_in[1].m_flow",
+        "Ecg.ecg",
+        "EithaPressure.pressure"
+    ],
+    "monitor_vars": [
+        "filter.y",
+        "currentHeartReat.y",
+        "arterialPressure.systolic",
+        "arterialPressure.diastolic",
+        "arterial.sO2",
+        "arterial.pO2",
+        "arterial.pCO2",
+        "arterial.pH",
+        "tissueUnit[1].pH",
+        "venous.pH"
+    ],
+    "control_vars" : [
+        "TotalCompliance",
+        "DV",
+        "cShuntFrac"
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "default_state": {
+        "cShuntFrac": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 100,
+            "value": 2
+        },
+        "DV": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 1000000,
+            "value": 150
+        },
+        "RR": {
+            "model": "bloody_mary,ventilator",
+            "multiplier": 1,
+            "divider": 60,
+            "value": 17
+        },
+        "TotalCompliance": {
+            "model": "ventilator",
+            "multiplier": 1e-6,
+            "divider": 98.0665,
+            "value": 60
+        },
+        "AirO2Fraction.k": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 100,
+            "value": 21
+        },
+        "ventilatorSCMV.pause": {
+            "model": "ventilator",
+            "multiplier": 1,
+            "divider": 100,
+            "value": 0.1
+        },
+        "expirationConductance.k": {
+            "model": "ventilator",
+            "multiplier": 1,
+            "divider": 100000,
+            "value": 0.31
+        }
+    },
+    "controls": {
+        "TotalCompliance": {
+            "model": "ventilator",
+            "multiplier": 1e-6,
+            "divider": 98.0665,
+            "min": 10,
+            "max": 200
+        },
+        "DV": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 1000000,
+            "min": 150,
+            "max": 400
+        },
+        "cShuntFrac": {
+            "model": "bloody_mary",
+            "multiplier": 1,
+            "divider": 100,
+            "min": 2,
+            "max": 70
+        }
+    }
+}
