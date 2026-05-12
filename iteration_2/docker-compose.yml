@@ -1,0 +1,16 @@
+services:
+  fmu-simulator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    # Force x86 emulation
+    platform: linux/amd64
+    
+    volumes:
+      - .:/workspace
+      
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
