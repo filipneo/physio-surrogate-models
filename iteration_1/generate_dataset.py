@@ -8,7 +8,8 @@ from tqdm import tqdm
 
 # Path to FMU
 BASE_DIR = Path(__file__).resolve().parent
-FMU_PATH = BASE_DIR / "hemodynamic_model_burkhoff.fmu"
+MODELS_DIR = BASE_DIR / "models"
+FMU_PATH = MODELS_DIR / "hemodynamic_model_burkhoff.fmu"
 UNZIPPED_FMU = extract(str(FMU_PATH))
 
 # Simulation settings

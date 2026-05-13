@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Distribution / packaging
+site-packages/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Data and model outputs (large files)
+iteration_1/data/*.csv
+iteration_2/data/*.csv
+iteration_3/data/*.csv
+!iteration_1/data/*_preview.csv
+!iteration_2/data/*_preview.csv
+!iteration_3/data/*_preview.csv
+
+# FMU extracted artifacts
+*.fmu.extracted/
+tmp/
